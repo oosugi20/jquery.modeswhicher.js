@@ -8,6 +8,16 @@
 <style>
 [data-modeswitcher] {
 }
+.type-A pre {
+	background: #FFC;
+}
+.type-B pre {
+	background: #CFF;
+}
+.type-A a[data-modeswitcher-btn="A"],
+.type-B a[data-modeswitcher-btn="B"] {
+	background: #C99;
+}
 </style>
 <script>
 $(function () {
@@ -17,6 +27,43 @@ $(function () {
 </head>
 
 <body>
-<div data-modeswitcher></div>
+
+<div data-modeswitcher>
+
+<ul data-modeswitcher-controller="hoge">
+<li><a href="#" data-modeswitcher-btn="A">hoge: to mode A</a></li>
+<li><a href="#" data-modeswitcher-btn="B">hoge: to mode B</a></li>
+</ul>
+<ul data-modeswitcher-controller="fuga">
+<li><a href="#" data-modeswitcher-btn="A">fuga: to mode A</a></li>
+<li><a href="#" data-modeswitcher-btn="B">fuga: to mode B</a></li>
+</ul>
+
+<div data-modeswitcher-content="hoge">
+<pre>
+hoge contents
+hoge contents
+hoge contents
+</pre>
+</div>
+
+<div data-modeswitcher-content="fuga">
+<pre>
+fuga contents
+fuga contents
+</pre>
+</div>
+
+<ul data-modeswitcher-controller="hoge">
+<li><a href="#" data-modeswitcher-btn="A">hoge: to mode A</a></li>
+<li><a href="#" data-modeswitcher-btn="B">hoge: to mode B</a></li>
+</ul>
+<ul data-modeswitcher-controller="fuga">
+<li><a href="#" data-modeswitcher-btn="A">fuga: to mode A</a></li>
+<li><a href="#" data-modeswitcher-btn="B">fuga: to mode B</a></li>
+</ul>
+
+</div>
+
 </body>
 </html>
