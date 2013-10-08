@@ -44,7 +44,6 @@ Module = function (element, options) {
 			var name = $(this).closest('[data-modeswitcher-controller]').attr('data-modeswitcher-controller');
 			var mode = $(this).attr('data-modeswitcher-btn');
 
-			console.log(name, mode);
 			_this.modeTo(name, mode);
 			
 			e.preventDefault();
