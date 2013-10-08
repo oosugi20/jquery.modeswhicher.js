@@ -84,6 +84,8 @@ Module = function (element, options) {
 		$targetController.addClass(class_name);
 
 		$targetController.attr('data-modeswitcher-mode', mode);
+
+		this.$el.trigger('modeswitcher:change');
 	};
 
 })(Module.prototype);
